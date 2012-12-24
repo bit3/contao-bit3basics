@@ -1,13 +1,10 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
- * InfinitySoft Base Extension
+ * bit3 basic settings
  *
- * InfinitySoft Base Extension von InfinitySoft, Tristan Lins steht unter einer Creative Commons Namensnennung 3.0 Unported Lizenz.
- *
- * PHP version 5
- * @copyright  InfinitySoft 2012
- * @author     Tristan Lins <tristan.lins@infinitysoft.de>
+ * @author     Tristan Lins <tristan.lins@bit3.de>
+ * @link       http://bit3.de
  * @license    CC-BY 3.0
  * @filesource
  */
@@ -21,19 +18,23 @@ $GLOBALS['TL_CONFIG']['dateFormat']  = 'd.m.Y';
 $GLOBALS['TL_CONFIG']['datimFormat'] = 'd.m.Y H:i';
 $GLOBALS['TL_CONFIG']['timeZone']    = 'Europe/Berlin';
 
-// URL settings
+// Global settings
+$GLOBALS['TL_CONFIG']['minifyMarkup'] = true;
+
+// Frontend settings
 $GLOBALS['TL_CONFIG']['rewriteURL']    = true;
-$GLOBALS['TL_CONFIG']['folderAlias']   = true;
-$GLOBALS['TL_CONFIG']['languageAlias'] = 'none';
+$GLOBALS['TL_CONFIG']['useAutoItem']   = true;
+$GLOBALS['TL_CONFIG']['addLanguageToUrl'] = true;
+$GLOBALS['TL_CONFIG']['folderUrl'] = true;
 
-// Upload settings
-$GLOBALS['TL_CONFIG']['maxFileSize'] = 204800000;
-$GLOBALS['TL_CONFIG']['imageWidth']  = 3000;
-$GLOBALS['TL_CONFIG']['imageHeight'] = 3000;
-
-// Image processing settings
+// File and image settings
 $GLOBALS['TL_CONFIG']['gdMaxImgWidth']  = PHP_INT_MAX;
 $GLOBALS['TL_CONFIG']['gdMaxImgHeight'] = PHP_INT_MAX;
+
+// Upload settings
+$GLOBALS['TL_CONFIG']['maxFileSize'] = 204800000; // 200M
+$GLOBALS['TL_CONFIG']['imageWidth']  = 3000;
+$GLOBALS['TL_CONFIG']['imageHeight'] = 3000;
 
 // MagickImages settings
 $GLOBALS['TL_CONFIG']['magickimages_unsharp_mask'] = true;
@@ -41,18 +42,15 @@ $GLOBALS['TL_CONFIG']['magickimages_force']        = true;
 $GLOBALS['TL_CONFIG']['magickimages_optipng']      = true;
 $GLOBALS['TL_CONFIG']['magickimages_advpng']       = true;
 
-// Theme+ settings
-$GLOBALS['TL_CONFIG']['default_css_minimizer']   = 'yui';
-$GLOBALS['TL_CONFIG']['default_js_minimizer']    = 'yui';
-$GLOBALS['TL_CONFIG']['theme_plus_lesscss_mode'] = 'phpless';
-$GLOBALS['TL_CONFIG']['gzipScripts']             = true;
-
 // Redirect4ward settings
 $GLOBALS['TL_CONFIG']['redirect4wardKillQueryStr']  = true;
 $GLOBALS['TL_CONFIG']['redirect4ward_use_htaccess'] = true;
 
+// WebsiteBuilder settings
+$GLOBALS['TL_CONFIG']['website_builder_datasets'] = 'a:1:{i:0;s:71:"https://raw.github.com/bit3/contao-WebsiteBuilderSet/master/baseset.xml";}';
+
 // htaccess configuration
-$GLOBALS['TL_HTACCESS_DEFAULTS']['infinitysoft'] = array_merge(
+$GLOBALS['TL_HTACCESS_DEFAULTS']['bit3'] = array_merge(
 	$GLOBALS['TL_HTACCESS_DEFAULTS']['html5boilerplate'],
 	array
 	(
