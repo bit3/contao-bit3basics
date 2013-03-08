@@ -22,10 +22,10 @@ $GLOBALS['TL_CONFIG']['timeZone']    = 'Europe/Berlin';
 $GLOBALS['TL_CONFIG']['minifyMarkup'] = true;
 
 // Frontend settings
-$GLOBALS['TL_CONFIG']['rewriteURL']    = true;
-$GLOBALS['TL_CONFIG']['useAutoItem']   = true;
+$GLOBALS['TL_CONFIG']['rewriteURL']       = true;
+$GLOBALS['TL_CONFIG']['useAutoItem']      = true;
 $GLOBALS['TL_CONFIG']['addLanguageToUrl'] = true;
-$GLOBALS['TL_CONFIG']['folderUrl'] = true;
+$GLOBALS['TL_CONFIG']['folderUrl']        = true;
 
 // File and image settings
 $GLOBALS['TL_CONFIG']['gdMaxImgWidth']  = PHP_INT_MAX;
@@ -47,7 +47,7 @@ $GLOBALS['TL_CONFIG']['redirect4wardKillQueryStr']  = true;
 $GLOBALS['TL_CONFIG']['redirect4ward_use_htaccess'] = true;
 
 // WebsiteBuilder settings
-$GLOBALS['TL_CONFIG']['website_builder_datasets'] = 'a:1:{i:0;s:71:"https://raw.github.com/bit3/contao-WebsiteBuilderSet/master/baseset.xml";}';
+$GLOBALS['TL_CONFIG']['website_builder_datasets'] = 'a:1:{i:0;s:71:"https://raw.github.com/bit3/contao-website-builder-set/master/baseset.xml";}';
 
 // htaccess configuration
 $GLOBALS['TL_HTACCESS_DEFAULTS']['bit3'] = array_merge(
