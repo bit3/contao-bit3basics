@@ -1,7 +1,7 @@
 {
 	"name":"bit3/contao-bit3basics",
 	"description":"Set of basic settings for Contao OpenSource CMS",
-	"version":"1.1.0",
+	"version":"1.1.1",
 	"keywords":["contao", "settings"],
 	"type":"contao-module",
 	"homepage":"http://bit3.de",
