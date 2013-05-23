@@ -50,18 +50,22 @@ $GLOBALS['TL_CONFIG']['redirect4ward_use_htaccess'] = true;
 $GLOBALS['TL_CONFIG']['website_builder_datasets'] = 'a:1:{i:0;s:71:"https://raw.github.com/bit3/contao-website-builder-set/master/baseset.xml";}';
 
 // htaccess configuration
-$GLOBALS['TL_HTACCESS_DEFAULTS']['bit3'] = array_merge(
-	$GLOBALS['TL_HTACCESS_DEFAULTS']['html5boilerplate'],
-	array
-	(
-		/* rewrite config */
-		// 'htaccess_rewrite_rules' => '',
-		'htaccess_rewrite_prepend_www'     => true,
-		'htaccess_rewrite_remove_www'      => true,
-		'htaccess_rewrite_gzip'            => true,
-		'htaccess_rewrite_suffix'          => '',
-		/* h5bp settings */
-		'htaccess_h5bp_ie_x_ua_compatible' => true,
-		'htaccess_h5bp_ie_flicker_fix'     => true
-	)
-);
+if (isset($GLOBALS['TL_HTACCESS_DEFAULTS']['html5boilerplate']) &&
+	is_array($GLOBALS['TL_HTACCESS_DEFAULTS']['html5boilerplate'])
+) {
+	$GLOBALS['TL_HTACCESS_DEFAULTS']['bit3'] = array_merge(
+		$GLOBALS['TL_HTACCESS_DEFAULTS']['html5boilerplate'],
+		array
+		(
+			/* rewrite config */
+			// 'htaccess_rewrite_rules' => '',
+			'htaccess_rewrite_prepend_www'     => true,
+			'htaccess_rewrite_remove_www'      => true,
+			'htaccess_rewrite_gzip'            => true,
+			'htaccess_rewrite_suffix'          => '',
+			/* h5bp settings */
+			'htaccess_h5bp_ie_x_ua_compatible' => true,
+			'htaccess_h5bp_ie_flicker_fix'     => true
+		)
+	);
+}
