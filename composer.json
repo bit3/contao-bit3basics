@@ -30,9 +30,12 @@
 	},
 	"extra":{
 		"contao": {
-			"symlinks":{
+			"sources":{
 				"contao":"system/modules/bit3basics"
 			}
+		},
+		"branch-alias": {
+			"dev-master": "1.x-dev"
 		}
 	}
 }
