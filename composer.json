@@ -30,7 +30,7 @@
 		"bit3/php-coding-standard":"@dev"
 	},
 	"replace":{
-		"contao-legacy/bit3basics":"*"
+		"contao-legacy/bit3basics":"self.version"
 	},
 	"extra":{
 		"contao": {
