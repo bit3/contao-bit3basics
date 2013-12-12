@@ -32,6 +32,11 @@
 	"replace":{
 		"contao-legacy/bit3basics":"self.version"
 	},
+	"autoload": {
+		"psr-0": {
+			"Bit3\\Basics": "src"
+		}
+	},
 	"extra":{
 		"contao": {
 			"sources":{
