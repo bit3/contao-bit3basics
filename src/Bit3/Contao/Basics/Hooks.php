@@ -9,7 +9,7 @@
  * @filesource
  */
 
-namespace Bit3\Basics;
+namespace Bit3\Contao\Basics;
 
 class Hooks {
 	public function normalizeName($name)

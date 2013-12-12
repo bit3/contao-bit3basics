@@ -71,4 +71,4 @@ if (isset($GLOBALS['TL_HTACCESS_DEFAULTS']['html5boilerplate']) &&
 }
 
 // Hooks
-$GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('Bit3\Basics\Hooks', 'loadDataContainer');
+$GLOBALS['TL_HOOKS']['loadDataContainer'][] = array('Bit3\Contao\Basics\Hooks', 'loadDataContainer');

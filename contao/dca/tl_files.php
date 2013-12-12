@@ -9,4 +9,4 @@
  * @filesource
  */
 
-array_unshift($GLOBALS['TL_DCA']['tl_files']['fields']['name']['save_callback'], array('Bit3\Basics\Hooks', 'normalizeName'));
+array_unshift($GLOBALS['TL_DCA']['tl_files']['fields']['name']['save_callback'], array('Bit3\Contao\Basics\Hooks', 'normalizeName'));
