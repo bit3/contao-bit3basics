@@ -34,7 +34,7 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"Bit3\\Basics": "src"
+			"Bit3\\Contao\\Basics": "src"
 		}
 	},
 	"extra":{
